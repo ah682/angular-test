@@ -1,0 +1,13 @@
+<div class="container mt-3">
+  <app-header></app-header>
+
+  <!-- Button Component -->
+  <app-button (toggleVisibility)="toggleEmpForm()"></app-button>
+
+  <!-- Conditionally Display Empform -->
+  <app-empform *ngIf="isEmpFormVisible"></app-empform>
+
+  <app-employees></app-employees>
+  <app-footer></app-footer>
+  <app-lifecycle></app-lifecycle>
+</div>
